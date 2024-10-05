@@ -1,1 +1,1 @@
-##2D Image Manipulation Project 
+2D Image Manipulation Project 
