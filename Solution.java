@@ -17,32 +17,32 @@ public class Solution {
 
 		int[][] trimmed = trimBorders(imageData, 60);
 
-		twoDToImage(trimmed, "./trimmed_apple.jpg");
+		twoDToImage(trimmed, "./trimmed.jpg");
 		
 
 		int[][] negative = negativeColor(imageData);
 
-		twoDToImage(negative, "./negative_apple.jpg");
+		twoDToImage(negative, "./negative.jpg");
 		
 
 		int[][] stretchedHImg = stretchHorizontally(imageData);
 
-		twoDToImage(stretchedHImg, "./stretched_apple.jpg");
+		twoDToImage(stretchedHImg, "./stretched.jpg");
 		
 
 		int[][] shrankVImg = shrinkVertically(imageData);
 
-		twoDToImage(shrankVImg, "./shrank_apple.jpg");
+		twoDToImage(shrankVImg, "./shrank.jpg");
 		
 
 		int[][] invertedImg = invertImage(imageData);
 
-		twoDToImage(invertedImg, "./inverted_apple.jpg");
+		twoDToImage(invertedImg, "./inverted.jpg");
 		
 
 		int[][] coloredImg = colorFilter(imageData, -75, 30, -30);
 
-		twoDToImage(coloredImg, "./colored_apple.jpg");
+		twoDToImage(coloredImg, "./colored.jpg");
 
 		// int[][] allFilters = stretchHorizontally(shrinkVertically(colorFilter(negativeColor(trimBorders(invertImage(imageData), 50)), 200, 20, 40)));
 
